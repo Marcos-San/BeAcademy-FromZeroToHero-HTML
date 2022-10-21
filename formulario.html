@@ -49,12 +49,12 @@
     <input type="text" list="prof-list" placeholder="Escolha seu professor">
 -->
 
-    <fieldset>
-        <legend>Trabalhando com Inputs</legend>
+    <!-- <fieldset>
+        <legend>Trabalhando com Inputs</legend> -->
 
         <!--Input text-->
 
-        <input
+        <!-- <input
         type="text"
         placeholder="Preencha o seu nome"
         size="60"
@@ -63,44 +63,143 @@
         title="Preencha o dado"
         readonly
         >
-        <br>
+        <br> -->
 
         <!--Input Number-->
-        <input
+        <!-- <input
         type="number"
         size="50"
         minlength="6"
         maxlength="12"
         title="Preencha o dado"
         >
-        <br>
+        <br> -->
         <!--Input Email-->
-        <input
+        <!-- <input
         type="email"
         size="24"
         title="Preencha o dado"
         required
         >
-        <br>
+        <br> -->
         
         <!--Input Password-->
-        <input
+        <!-- <input
         type="password"
         size="24"
         title="Sua senha precisa ser em Hexadecimal"
         pattern="{0-9a-fA-F}{4,8}"
         required
-        >
+        > -->
 
-
+        
         <!--Input Hidden-->
-        <input type="hidden" value="Eu estou escondido">
+        <!-- <input type="hidden" value="Eu estou escondido"> -->
 
         <!--Input Color-->
-        <input type="color">
 
-        <!--input Date-->
-        <input type="date">
+        <!--input Date, week, datetime-local, month, time-->
+        <!-- <input type="date">  -->
+
+        <!--Input Type = Check (Checkbox)-->
+        <!-- <label for="area">
+            Seu interesse maior e por qual area?
+        </label>
+
+        <div>
+            <input
+            type="checkbox"
+            name="interesse"
+            id="frontend"
+            value="Front-End Luan Monteiro">
+            <label for="frontend">Front-End Luan Monteiro</label>  
+            
+            <input
+            type="checkbox"
+            name="interesse"
+            id="backend"
+            value="Back-End Regis Santos">
+            <label for="backend">Back-End Luan Monteiro</label>   
+
+            <input
+            type="checkbox"
+            name="interesse"
+            id="desinguiux"
+            value="Desing UI/UX Jenifer Vieira">
+            <label for="desinguiux">Desing UI/UX Jenifer Vieira</label>   
+        </div>
+
+        <br>
+        <br>
+        <br> -->
+
+        <!--Interesse =front-end Luan Monteiro, Back-end Regis Santos...-->
+        <!-- <h3>Deseja receber notificação de be.academy</h3>
+        <label for="yes">Sim</label>
+        <input type="radio" id="yes" name="notification" value="yes">
+
+        <label for="no">Não</label>
+        <input type="radio" id="no" name="notification" value="no"> -->
+
+
+        <!--
+            SELECT
+
+            Elementos de formulário capaz de criar uma lista de opções
+            a seres selecionadas, DropDown
+
+        -->
+
+        <label for="teacher">Professores:</label>
+        <select name="select-teacher" id="teacher" multiple size="4">
+            <option value="Selecionne um profefssor"></option>
+            <option value="Luan Santos">Luan Santos</option>
+            <option value="Moacir Garcia">Moacir Garcia</option>
+            <option value="Jenifer Vieira">Jenifer Vieira</option>
+            <option value="Regis Santos">Regis Santos</option>
+        </select>
+
+        <!--
+            Input Search
+
+            *Elemento usado para pesquisar conteúdo
+            Pareceido com o campo "text" pode receber atributos e
+            comportamentos
+
+        -->
+
+        <br>
+        <br>
+
+        <input
+        type="search"
+        name=""
+        title=""
+        placeholder="Busque o usuário pelo id"
+        size="24"
+        pattern="{0-9}`{0,3}"
+        title="Busque por o id até 3 digitos"
+        required
+        >
+
+        <br>
+        <br>
+
+        <!--
+            Manipulando arquivos com o file
+
+            *Usuário poderá fazer  um upload de 1 ou mais
+            arquivos  de acordo com a extensão
+        -->
+
+        <input
+        Type="file"
+        value=""
+        accept="image/*"
+        multiple
+        name=""
+        id=""
+        >
 
         <br>
         <button type="submit">Enviar</button>
